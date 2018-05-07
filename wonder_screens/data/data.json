@@ -1,0 +1,30 @@
+{
+  "Places": [
+    {
+      "id": 0,
+      "name": "Great Wall of China",
+      "country": "China",
+      "coordinates": "40.68°N 117.23°E",
+      "size": "21,196 km (13,171 mi) long.",
+      "builtage": "220–206 BC",
+      "builtby": "Qin Shi Huang",
+      "short_desc": "The Great Wall of China is a series of fortifications made of stone, brick, tamped earth, wood, and other materials, generally built along an east-to-west line across the historical northern borders of China to protect the Chinese states and empires against the raids and invasions of the various nomadic groups of the Eurasian Steppe. Several walls were being built as early as the 7th century BC;[2] these, later joined together and made bigger and stronger, are collectively referred to as the Great Wall.[3] Especially famous is the wall built in 220–206 BC by Qin Shi Huang, the first Emperor of China.",
+      "long_desc_url": "https://en.wikipedia.org/wiki/Great_Wall_of_China",
+      "thumb_url": "../src/assets/wonderImages/grate-wall/thumb.jpg",
+      "background_url": "../src/assets/wonderImages/grate-wall/background.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Christ the Redeemer",
+      "country": "Rio de Janeiro",
+      "coordinates": "22°57′7″S 43°12′38″W",
+      "size": "30 metres (98 ft) and 38 metres (125 ft) tall with its pedestal.",
+      "builtage": "1931 CE",
+      "builtby": "Paul Landowski and Heitor da Silva Costa",
+      "short_desc": "Christ the Redeemer (Portuguese: Cristo Redentor, standard Brazilian Portuguese: [ˈkɾistu ʁedẽˈtoʁ], local pronunciation: [ˈkɾiɕtŭ̻ xe̞dẽ̞ˈtoɦ]) is an Art Deco statue of Jesus Christ in Rio de Janeiro, Brazil, created by French sculptor Paul Landowski and built by the Brazilian engineer Heitor da Silva Costa, in collaboration with the French engineer Albert Caquot. Romanian sculptor Gheorghe Leonida fashioned the face. Constructed between 1922 and 1931, the statue is 30 metres (98 ft) tall, excluding its 8-metre (26 ft) pedestal. The arms stretch 28 metres (92 ft) wide.",
+      "long_desc_url": "https://en.wikipedia.org/wiki/Christ_the_Redeemer_(statue)",
+      "thumb_url": "../src/assets/wonderImages/christ-the-redeemer/thumb.jpg",
+      "background_url": "../src/assets/wonderImages/christ-the-redeemer/background.jpg"
+    }
+  ]
+}

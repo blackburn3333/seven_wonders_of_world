@@ -1,0 +1,3 @@
+rootProject.name = 'seven_wonders_of_world'
+
+include ':app'
