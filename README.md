@@ -11,4 +11,6 @@ Seven wonder of world is react native project that designed for learn basics of 
 
 #SCREENSHOTS
 
-![alt text](screenshots/1.png "Start Screen")
+<img src="./screenshots/1.png" alt="Start Screen" width="50%">
+<img src="./screenshots/2.png" alt="Start Screen" width="50%">
+<img src="./screenshots/3.png" alt="Start Screen" width="50%">
