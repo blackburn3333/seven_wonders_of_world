@@ -8,3 +8,7 @@ Seven wonder of world is react native project that designed for learn basics of 
 -> Fetch data from JSON
 -> ActivityIndicator
 -> TouchableHighlight
+
+#SCREENSHOTS
+
+![alt text](screenshots/1.png "Start Screen")
