@@ -2,7 +2,17 @@
  * Created by Burn's hand on 5/4/2018.
  */
 import React, {Component} from 'react';
-import {View, Text, StyleSheet, FlatList, ActivityIndicator, Image, TouchableHighlight, Alert,ImageBackground} from 'react-native';
+import {
+    View,
+    Text,
+    StyleSheet,
+    FlatList,
+    ActivityIndicator,
+    Image,
+    TouchableHighlight,
+    Alert,
+    ImageBackground
+} from 'react-native';
 
 
 export default class wonders_menu extends Component {
@@ -25,28 +35,31 @@ export default class wonders_menu extends Component {
         return (
             <TouchableHighlight onPress={
                 () => navigate("Details", {
-                    place_id:item.id,
-                    place_name:item.name,
-                    place_country:item.country,
-                    place_build_age:item.builtage,
-                    place_build_by:item.builtby,
-                    place_coordinates:item.coordinates,
-                    place_size:item.size,
-                    place_desc:item.short_desc,
+                    place_id: item.id,
+                    place_name: item.name,
+                    place_country: item.country,
+                    place_build_age: item.builtage,
+                    place_build_by: item.builtby,
+                    place_coordinates: item.coordinates,
+                    place_size: item.size,
+                    place_desc: item.short_desc,
                 })
             } underlayColor="white">
                 <View style={wonderMenuStyles.list_container}>
                     <View style={wonderMenuStyles.datacon}>
                         <Text style={wonderMenuStyles.main_text}>{item.name.toUpperCase()}</Text>
                     </View>
-                    <View style={{flexDirection: 'row', justifyContent: 'center'}}>
-                        <Image source={require('../src/assets/icons/ic_room_white_24dp_2x.png')}
-                               style={wonderMenuStyles.iconsmall}/>
-                        <Text>{ item.country.toUpperCase() }</Text>
-                        <Text>  |  </Text>
-                        <Image source={require('../src/assets/icons/ic_query_builder_white_24dp_2x.png')}
-                               style={wonderMenuStyles.iconsmall}/>
-                        <Text>{ item.builtage }</Text>
+                    <View style={{flexDirection: 'column' }}>
+                        <View style={{flexDirection: 'row'}}>
+                            <Image source={require('../src/assets/icons/ic_room_white_24dp_2x.png')}
+                                   style={wonderMenuStyles.iconsmall}/>
+                            <Text style={wonderMenuStyles.sumsum}>{ item.country.toUpperCase() }</Text>
+                        </View>
+                        <View style={{flexDirection: 'row'}}>
+                            <Image  source={require('../src/assets/icons/ic_query_builder_white_24dp_2x.png')}
+                                   style={wonderMenuStyles.iconsmall}/>
+                            <Text style={wonderMenuStyles.sumsum}>{ item.builtage }</Text>
+                        </View>
                     </View>
                 </View>
             </TouchableHighlight>
@@ -73,7 +86,8 @@ export default class wonders_menu extends Component {
             this.state.isLoading ? <View style={{flex: 1, justifyContent: 'center', alignItems: 'center',}}>
                 <ActivityIndicator size='large' color="#000000" animating/>
             </View> :
-                <ImageBackground source={require('../src/assets/background2.jpg')} style={wonderMenuStyles.containerView}>
+                <ImageBackground source={require('../src/assets/background2.jpg')}
+                                 style={wonderMenuStyles.containerView}>
                     <FlatList
                         data={this.state.wonder_data}
                         renderItem={this.renderItem}
@@ -99,8 +113,6 @@ const wonderMenuStyles = StyleSheet.create(
             backgroundColor: '#37affc',
             padding: 20.0,
             margin: 10.0,
-            justifyContent: 'center',
-            alignItems: 'center',
             borderWidth: 5.0,
             borderColor: 'transparent',
             borderBottomColor: '#6ec6ff',
@@ -118,6 +130,10 @@ const wonderMenuStyles = StyleSheet.create(
         iconsmall: {
             width: 20.0,
             height: 20.0,
-        }
+            marginBottom: 8.0,
+        },
+        sumsum: {
+            marginBottom: 8.0,
+    }
     }
 );

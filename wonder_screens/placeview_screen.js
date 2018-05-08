@@ -122,7 +122,7 @@ const wonderViewStyles = StyleSheet.create({
     thumb: {
         width: 200.0,
         height: 200.0,
-        borderRadius: 150.0
+        borderRadius: 400
     },
     contentContainer: {
         paddingVertical: 5,
@@ -137,7 +137,8 @@ const wonderViewStyles = StyleSheet.create({
         marginTop: 10.0,
         borderRadius: 15.0,
         backgroundColor: '#f4ad42',
-        padding: 20.0,
+        padding: 20,
+        paddingRight:30
     }, titleText: {
         fontSize: 20.0,
         color: "#FFFFFF",
